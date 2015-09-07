@@ -1,0 +1,54 @@
+{
+  "name": "leven-cli",
+  "version": "0.0.0",
+  "description": "Measure the difference between two strings using the Levenshtein distance algorithm",
+  "license": "MIT",
+  "repository": "sindresorhus/leven-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "leven": "cli.js"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "leven",
+    "levenshtein",
+    "distance",
+    "algorithm",
+    "algo",
+    "string",
+    "difference",
+    "diff",
+    "fast",
+    "fuzzy",
+    "similar",
+    "similarity",
+    "compare",
+    "comparison",
+    "edit",
+    "text",
+    "match",
+    "matching"
+  ],
+  "dependencies": {
+    "leven": "^2.0.0",
+    "meow": "^3.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
