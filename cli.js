@@ -1,14 +1,14 @@
 #!/usr/bin/env node
-'use strict';
-var meow = require('meow');
-var leven = require('leven');
+import process from 'node:process';
+import meow from 'meow';
+import leven from 'leven';
 
-var cli = meow({
-	help: [
-		'Example',
-		'  $ leven cat cow',
-		'  2'
-	]
+const cli = meow(`
+	Example
+	  $ leven cat cow
+	  2
+`, {
+	importMeta: import.meta,
 });
 
 if (cli.input.length < 2) {
@@ -16,4 +16,6 @@ if (cli.input.length < 2) {
 	process.exit(1);
 }
 
-console.log(leven(cli.input[0], cli.input[1]));
+const [first, second] = cli.input;
+
+console.log(leven(first, second));
