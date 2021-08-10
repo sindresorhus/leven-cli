@@ -1,6 +1,6 @@
 {
 	"name": "leven-cli",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Measure the difference between two strings using the Levenshtein distance algorithm",
 	"license": "MIT",
 	"repository": "sindresorhus/leven-cli",
